@@ -1,6 +1,6 @@
-# Enviro Templater
+# Templater
 
-Simple templating with environment variables for Docker using Jinja2.
+Simple templating with environment variables for Docker using Jinja2 templates.
 
 ## Usage
 
@@ -10,7 +10,6 @@ the current environment.
 
 
 ```
-./templater.py --help
 Usage: templater.py [OPTIONS]
 
 Options:
