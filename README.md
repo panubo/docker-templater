@@ -1,12 +1,12 @@
 # Templater
 
-Simple templating with environment variables for Docker using Jinja2 templates.
+Simple templating with environment variables for [Docker](http://docker.io) using [Jinja2](http://jinja.pocoo.org) templates.
 
 ## Usage
 
 All environment variables are available within the template context. If 
-you specify a `--env-file` these variables will be loaded in addition to 
-the current environment.
+you specify `--env-file` then those variables will be loaded in addition to 
+the current system environment.
 
 
 ```
