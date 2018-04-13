@@ -8,4 +8,4 @@ RUN cd / && \
   apk del bash curl git && \
   rm -rf /var/cache/apk/*
 
-CMD ["/venv/bin/templater.py"]
+ENTRYPOINT ["/venv/bin/templater.py"]
