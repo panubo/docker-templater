@@ -29,10 +29,10 @@ def set_environment(env_file):
 
 
 def render(template, output):
-    loader = FileSystemLoader(searchpath=os.path.dirname(template))
+    loader = FileSystemLoader(searchpath=os.path.dirname(template), followlinks=True)
     environment = Environment(loader=loader)
     try:
-        template = environment.get_template(template)
+        template = environment.get_template(os.path.basename(template))
     except TemplateNotFound as e:
         exit_with_error('Template not found')
     except TemplateSyntaxError as e:
